@@ -1,0 +1,19 @@
+App: Spring Boot + H2 + JWT + Swagger
+
+
+
+Swagger:
+  http://localhost:8080/swagger-ui.html
+
+Auth:
+  Get token: POST http://localhost:8080/auth/token
+  Use header: Authorization: Bearer <token>
+
+Users API:
+  POST /users            (public)  body: {"name","city","companyName"}
+  GET  /users            (JWT)
+  GET  /users/{id}       (JWT)
+
+DB (H2 Console):
+  http://localhost:8080/h2-console
+  JDBC: jdbc:h2:mem:testdb, user: sa, pass: (empty)
